@@ -8,24 +8,29 @@ function getAge()
 {
 var myAge=document.getElementById("myAge").value; //de eerste variabele is voor je aangemaakt...
 
-    if() //vul de juiste voorwaarde in!
+    if(myAge < 10) //vul de juiste voorwaarde in!
         {
-             //kies code hieronder
+            loadChildTheme();//kies code hieronder
         }
     else
         {
-             //kies code hieronder
+            loadTheme();//kies code hieronder
         }
 }
 
 function loadChildTheme()
 {
- //kies code hieronder
+    document.getElementById("brand").src = "images/logo-01.png";
+    document.getElementsByTagName("header")[0].style.backgroundColor = "#00AEEF";
+    document.getElementsByTagName("body")[0].style.backgroundColor = "yellowgreen";
+    document.getElementById("main-nav").style.backgroundColor = "darkblue";
+    document.getElementsByClassName("active")[0].style.backgroundColor = "green";
+    document.getElementById("main-content").style.backgroundColor = "#00AEEF";
 }
 
 function loadTheme()
 {
- //kies code hieronder
+    document.getElementById("").src = "images/logo-02.png";
 }
 
 //dit is de code waar je uit kunt kiezen om de website goed te laten werken, let op je moet nog wel e.a. toevoegen!
